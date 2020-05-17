@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Wave Study</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!-- Início do NavBar-->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="/views/home.html">
+            <img src="../public/logo.png" width="120" height="80" class="d-inline-block align-top" alt="New Wave Study">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="/">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/views/home.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Áreas do Conhecimento
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/views/matematica.html">Matemática</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/views/ciencias-da-natureza.html">Ciências da Natureza</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/views/ciencias-humanas.html">Ciências Humanas</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/views/linguagens.html">Linguagens</a>
+                </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Exercícios
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/views/matematica/exercicios/exercicios-matematica.html">Matemática</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/views/ciencias-da-natureza.html">Ciências da Natureza</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/views/ciencias-humanas.html">Ciências Humanas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/views/linguagens.html">Linguagens</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre o Projeto</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li> 
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- Fim do NavBar-->
+
+    <!-- Áreas do Conhecimento -->
+    <div class="container">
+        <div class="row">
+            <div class="col matematica">
+                <div class="matematica">
+                    <a><h1 class="title-areas">Matemática</h1></a>
+                    <p>[Módulo 1 disponível]</p>
+                    <button type="button" class="btn btn-light btn-areas"><a class="pop" href="/views/matematica.html">Ver Aulas</a></button>
+                </div>
+            </div>
+
+            <div class="col natureza">
+                <div class="natureza">
+                    <a><h1 class="title-areas">Ciências da Natureza</h1></a>
+                    <p>[Biologia: Módulo 1 disponível]</p>
+                    <p>[Química: Módulo 1 disponível]</p>
+                    <p>[Física: Em construção]</p>
+                    <button type="button" class="btn btn-light btn-areas"><a class="pop" href="/views/ciencias-da-natureza.html">Ver Aulas</a></button>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col humanas">
+                <div class="humanas">
+                    <a><h1 class="title-areas">Ciências Humanas</h1></a>
+                    <p>[em construção]</p>
+                    <button type="button" class="btn btn-light btn-areas">Ver Aulas</button>
+                </div>
+            </div>
+
+            <div class="col linguagens">
+                <div class="linguagens">
+                    <a><h1 class="title-areas">Linguagens</h1></a>
+                    <p>[em construção]</p>
+                    <button type="button" class="btn btn-light btn-areas">Ver Aulas</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="agenda">
+                    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FSao_Paulo&amp;src=bHVhbm1lZGVpcm9zc2lsdmVpcmFAZ21haWwuY29t&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%237986CB&amp;showTitle=1&amp;title=Cronograma%20de%20Estudos&amp;showNav=1&amp;showPrint=1&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" width="350px" height="300px" style="border:solid 5px rgb(252, 252, 252); margin: 20px auto;" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Última Notícias</h5>
+                      <p class="card-text">Inscrição do Enem 2020 começa dia 11 de Maio e terminará dia 22 de maio</p>
+                      <a href="#" class="btn btn-light">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Última Notícias</h5>
+                      <p class="card-text">Inscrição do Enem 2020 começa dia 11 de Maio e terminará dia 22 de maio</p>
+                      <a href="#" class="btn btn-light">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Áreas do conhecimento</h3>
+                    <p> <a href="/views/matematica.html">Matemática</a> </p>
+                    <p><a href="/views/ciencias-da-natureza.html">Ciências da Natureza</a></p>
+                    <p><a href="#">Ciências Humanas</a></p>
+                    <p><a href="#">Linguagens</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

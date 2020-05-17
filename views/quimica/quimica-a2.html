@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Wave Study</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!-- Início do NavBar-->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="../../public/logo.png" width="120" height="80" class="d-inline-block align-top" alt="New Wave Study">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="/">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Áreas do Conhecimento
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/views/matematica">Matemática</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Ciências da Natureza</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Ciências Humanas</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Linguagens</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Redação</a>
+                </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Exercícios
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Matemática</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Ciências da Natureza</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Ciências Humanas</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Linguagens</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Redação</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre o Projeto</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li> 
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- Fim do NavBar-->
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="title">Aula 2 - Classificação das substâncias e dos sistemas</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/B45v19XH29w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col proxaula">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary"><a href="/views/quimica/quimica-a1.html">Aula 1</a></button>
+                <button type="button" class="btn btn-primary"><a href="/views/quimica/quimica-a2.html">Aula 2</a></button>
+                <button type="button" class="btn btn-primary"><a href="/views/quimica/quimica-a3.html">Aula 3</a></button>
+                <button type="button" class="btn btn-primary"><a href="/views/quimica/quimica-a4.html">Aula 4</a></button>
+                <button type="button" class="btn btn-primary"><a href="/views/quimica/quimica-a5.html">Aula 5</a></button>
+                <button type="button" class="btn btn-primary"><a href="/views/quimica/quimica-a6.html">Aula 6</a></button>
+                <button type="button" class="btn btn-primary"><a href="/views/quimica/quimica-a7.html">Aula 7</a></button>
+                <button type="button" class="btn btn-primary"><a href="/views/quimica/quimica-a8.html">Aula 8</a></button>
+                <button type="button" class="btn btn-primary"><a href="/views/quimica/quimica-a9.html">Aula 9</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col bloco">
+            <div class="textAnot">
+                <div>
+                    <input placeholder="Título" id="title" type="text" name="titulo"/>
+                </div>
+                <textarea id="anotacoes" rows="10" cols="52" placeholder="  Coloque sua anotações"></textarea>
+                <div class="btn-horizontal">
+                    <button onclick="mudaCorRed()" id="btnred" class="btn btn-danger btn-sm">Vermelho</button>
+                    <button onclick="mudaCorBlue()" id="btnblue" class="btn btn-primary btn-sm">Azul</button>
+                    <button onclick="mudaCorGreen()" id="btngreen" class="btn btn-success btn-sm">Verde</button>
+                    <button onclick="mudaCorYellow()" id="btnyellow" class="btn btn-warning btn-sm">Amarelo</button>
+                    <button onclick="mudaCorBlack()" id="btnwhite" class="btn btn-dark btn-sm">Preto</button>
+                </div>
+                <div class="btn-salva">
+                    <button id="save" class="btn btn-light btn-sm" >Salvar</button>
+                    <button id="download" onClick={fileSaver} class="btn btn-light btn-sm">Baixar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col bloco" style="text-align: center; padding-top: 100px;">
+            <button type="button" class="btn btn-success btn-lg"><a href="/views/quimica/exercicios/exercicios-quimica.html">Ir para exercícios</a></button>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Áreas do conhecimento</h3>
+                <p> <a href="pages/matematica.html">Matemática</a> </p>
+                <p>Ciências da Natureza</p>
+                <p>Ciências Humanas</p>
+                <p>Linguagens</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="cores.js"></script>
+<script src="/js/FileSaver.js"></script>
+<script>
+    function fileSaver(){
+        let titulo = document.getElementById('title').value
+        let valor = document.getElementById('anotacoes').value
+        let FileSaver = require('file-saver');
+        let blob = new Blob([valor], {type: "application/msword;charset=utf-8"});
+        FileSaver.saveAs(blob, `${titulo}.doc`);
+    }
+</script>
+</body>
+</html>
