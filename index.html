@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Wave Study</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="imagem/png" href="/public/logo.png" />
+</head>
+<body>
+    <!-- Início do NavBar-->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="../public/logo.png" width="120" height="80" class="d-inline-block align-top" alt="New Wave Study">
+        </a>
+    
+    </nav>
+    <!-- Fim do NavBar-->
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+
+            <div class="col-6 form-user">
+                <form method="POST" >
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Coloque seu Email</label>
+                      <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Seu E-mail">
+                      <small id="emailHelp" class="form-text text-muted">Não compartilhamos seu e-mail com ninguém.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Senha</label>
+                      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+                  </form>
+                  <button type="submit" class="btn btn-danger" id="btnLogin">Entrar</button>
+            </div>
+
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 30rem; margin-top: 20px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Última Notícias</h5>
+                      <p class="card-text">Inscrição do Enem 2020 começa dia 11 de Maio e terminará dia 22 de maio</p>
+                      <a href="#" class="btn btn-light">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 30rem; margin-top: 20px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Última Notícias</h5>
+                      <p class="card-text">Inscrição do Enem 2020 começa dia 11 de Maio e terminará dia 22 de maio</p>
+                      <a href="#" class="btn btn-light">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/authentication.js"></script>
+</body>
+</html>
