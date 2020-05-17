@@ -1,0 +1,166 @@
+/*
+    1-
+    2-
+    3-
+*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+$font-pattern: 'Josefin Sans', sans-serif;
+$font-block: 'Ubuntu', sans-serif;
+
+$preto: black;
+$branco: #f8f9fa;
+$rosa: rgb(241, 154, 241);
+$verde: #3CC47C;
+$amarelo: rgb(231, 225, 135);
+$laranja: #E9C893;
+$azul: #8FD8D2;
+
+
+@mixin boxAreas($color) {
+    background-color: $color;
+    padding: 40px;
+    text-align: center;
+    font-family: $font-block;
+}
+
+body{
+    
+    background-color: $branco;
+    font-family: $font-pattern;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:link{
+        text-decoration: none;
+    }
+    a:hover{
+        color: rgb(233, 233, 233);
+    }
+}
+
+.math{
+    h2{
+        color: white;
+    }
+    background-color: $verde;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.container{
+    .row{
+        .video{
+            text-align: center;
+            background-color: $azul;
+            padding: 20px;
+        }
+        .title{
+            text-align: center;
+        }
+        .breadcrumb{
+            background-color: rgb(0, 0, 0);
+        }
+        /* boxAreas => padronização dos boxs das Áreas*/
+        h1.title-areas{
+            font-size: 20px;
+        }
+        .matematica{
+            @include boxAreas($rosa);
+            a.pop{
+                color: black;
+            }
+            button.btn-areas:hover{
+                background-color: rgb(241, 154, 241);
+            }
+        }
+        
+        .natureza{
+            @include boxAreas($verde);
+            a.pop{
+                color: black;
+            }
+            button.btn-areas:hover{
+                background-color: $verde;
+            }
+        }
+        
+        .humanas {
+            
+            @include boxAreas($laranja);
+            a.pop{
+                color: black;
+            }
+            button.btn-areas:hover{
+                background-color: $laranja;
+            }
+        }
+        
+        .linguagens {
+            h1{
+                word-break: break-word;
+            }
+            @include boxAreas($azul);
+            a.pop{
+                color: black;
+            }
+            button.btn-areas:hover{
+                background-color: $azul;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: black;
+    padding: 50px;
+    margin-top: 10px;
+    h3{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+}
+
+@media (max-width: 768px){
+    .video{
+        iframe{
+            width: 340px;
+            height: 200px;
+        }
+        
+    }
+}
+
+.btn-salva{
+    margin: 20px auto 20px 0;
+}
+
+#anotacoes{
+    margin: 10px auto 10px auto;
+    padding: 10px;
+}
+ 
+#title{
+    margin: 10px auto 10px auto;
+}
+.bloco{
+    background-color: $laranja;
+}
+
+@media (max-width: 768px){
+    #anotacoes{
+        width: 300px;
+        height: 100px;
+    }
+}
+
+.proxaula{
+    text-align: center;
+    background-color: $azul;
+    padding-bottom: 10px;
+}
